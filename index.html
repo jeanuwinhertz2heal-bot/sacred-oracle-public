@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sacred Oracle - Personalized Wisdom Platform</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="extended-styles.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+<div class="cosmic-background">
+<canvas id="sacred-geometry"></canvas>
+</div>
+<header class="header">
+<h1 class="title">Sacred Oracle</h1>
+<p class="subtitle">Personalized Wisdom from Ancient Traditions</p>
+</header>
+<main class="main-container">
+<!-- Personalization Section -->
+<section class="personalization-panel">
+<h2>Personal Attunement</h2>
+<div class="input-grid">
+<div class="input-group">
+<label for="birthDate">Birth Date &amp; Time</label>
+<input id="birthDate" name="birthDate" type="datetime-local"/>
+</div>
+<div class="input-group">
+<label for="birthPlace">Birth Location</label>
+<input id="birthPlace" name="birthPlace" placeholder="City, Country" type="text"/>
+</div>
+<div class="input-group">
+<label for="currentQuestion">Current Life Question</label>
+<textarea id="currentQuestion" name="currentQuestion" placeholder="What guidance do you seek?"></textarea>
+</div>
+<div class="input-group">
+<label for="lifePhase">Current Life Phase</label>
+<select id="lifePhase" name="lifePhase">
+<option value="">Select Phase</option>
+<option value="initiation">Initiation &amp; Learning</option>
+<option value="building">Building &amp; Creating</option>
+<option value="mastery">Mastery &amp; Leadership</option>
+<option value="wisdom">Wisdom &amp; Teaching</option>
+<option value="transition">Transition &amp; Change</option>
+<option value="reflection">Reflection &amp; Integration</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Wisdom Tradition Selector -->
+<section class="tradition-selector">
+<h2>Select Wisdom Traditions</h2>
+<div class="tradition-grid">
+<div class="tradition-category">
+<h3>Psychological Teachings</h3>
+<div class="checkbox-group">
+<label><input checked="" type="checkbox" value="jung"/> Carl Jung - Archetypes &amp; Shadow Work</label>
+<label><input checked="" type="checkbox" value="freud"/> Freudian Analysis</label>
+<label><input checked="" type="checkbox" value="adler"/> Adlerian Psychology</label>
+<label><input checked="" type="checkbox" value="behavioral"/> Behavioral Patterns</label>
+</div>
+</div>
+<div class="tradition-category">
+<h3>Ancient Philosophy</h3>
+<div class="checkbox-group">
+<label><input checked="" type="checkbox" value="aristotle"/> Aristotelian Ethics</label>
+<label><input checked="" type="checkbox" value="socrates"/> Socratic Wisdom</label>
+<label><input checked="" type="checkbox" value="plato"/> Platonic Ideals</label>
+<label><input checked="" type="checkbox" value="stoic"/> Stoic Philosophy</label>
+<label><input checked="" type="checkbox" value="pythagorean"/> Pythagorean Teachings</label>
+</div>
+</div>
+<div class="tradition-category">
+<h3>Universal Laws</h3>
+<div class="checkbox-group">
+<label><input checked="" type="checkbox" value="attraction"/> Law of Attraction</label>
+<label><input checked="" type="checkbox" value="manifestation"/> Laws of Manifestation</label>
+<label><input checked="" type="checkbox" value="karma"/> Law of Karma</label>
+<label><input checked="" type="checkbox" value="correspondence"/> Law of Correspondence</label>
+<label><input checked="" type="checkbox" value="vibration"/> Law of Vibration</label>
+<label><input checked="" type="checkbox" value="polarity"/> Law of Polarity</label>
+<label><input checked="" type="checkbox" value="rhythm"/> Law of Rhythm</label>
+<label><input checked="" type="checkbox" value="causation"/> Law of Cause &amp; Effect</label>
+</div>
+</div>
+<div class="tradition-category">
+<h3>Mystical Traditions</h3>
+<div class="checkbox-group">
+<label><input checked="" type="checkbox" value="tarot"/> Rider-Waite Tarot</label>
+<label><input checked="" type="checkbox" value="kabbalah"/> Kabbalistic Wisdom</label>
+<label><input checked="" type="checkbox" value="hermetic"/> Hermetic Principles</label>
+<label><input checked="" type="checkbox" value="masonic"/> Masonic Teachings</label>
+<label><input checked="" type="checkbox" value="occult"/> Occult Sciences</label>
+<label><input checked="" type="checkbox" value="alchemy"/> Alchemical Transformation</label>
+</div>
+</div>
+<div class="tradition-category">
+<h3>Mythology &amp; Archetypes</h3>
+<div class="checkbox-group">
+<label><input checked="" type="checkbox" value="greek"/> Greek Mythology</label>
+<label><input checked="" type="checkbox" value="roman"/> Roman Mythology</label>
+<label><input checked="" type="checkbox" value="hindu"/> Hindu Mythology</label>
+<label><input checked="" type="checkbox" value="norse"/> Norse Mythology</label>
+<label><input checked="" type="checkbox" value="egyptian"/> Egyptian Mysteries</label>
+</div>
+</div>
+<div class="tradition-category">
+<h3>Astrological Sciences</h3>
+<div class="checkbox-group">
+<label><input checked="" type="checkbox" value="zodiac"/> Zodiacal Influences</label>
+<label><input checked="" type="checkbox" value="planetary"/> Planetary Wisdom</label>
+<label><input checked="" type="checkbox" value="houses"/> Astrological Houses</label>
+<label><input checked="" type="checkbox" value="aspects"/> Planetary Aspects</label>
+</div>
+</div>
+<div class="tradition-category">
+<h3>Sacred Sciences</h3>
+<div class="checkbox-group">
+<label><input checked="" type="checkbox" value="geometry"/> Sacred Geometry</label>
+<label><input checked="" type="checkbox" value="numerology"/> Numerological Patterns</label>
+<label><input checked="" type="checkbox" value="demonology"/> Demonological Studies</label>
+<label><input checked="" type="checkbox" value="theology"/> Theological Wisdom</label>
+</div>
+</div>
+<div class="tradition-category">
+<h3>Ethical &amp; Legal Frameworks</h3>
+<div class="checkbox-group">
+<label><input checked="" type="checkbox" value="natural-law"/> Natural Law</label>
+<label><input checked="" type="checkbox" value="moral-law"/> Moral Principles</label>
+<label><input checked="" type="checkbox" value="judicial"/> Judicial Wisdom</label>
+<label><input checked="" type="checkbox" value="ethical"/> Ethical Guidelines</label>
+<label><input checked="" type="checkbox" value="divine-law"/> Divine Law</label>
+</div>
+</div>
+</div>
+</section>
+<!-- Card Generation Controls -->
+<section class="generation-controls">
+<h2>Oracle Card Generation</h2>
+<div class="control-panel">
+<div class="spread-selector">
+<label for="cardSpread">Card Spread Type</label>
+<select id="cardSpread">
+<option value="single">Single Card - Daily Guidance</option>
+<option value="three">Three Card - Past/Present/Future</option>
+<option value="cross">Celtic Cross - Comprehensive Reading</option>
+<option value="chakra">Seven Chakra Alignment</option>
+<option value="planetary">Planetary Influence Spread</option>
+<option value="shadow">Shadow Work Integration</option>
+<option value="manifestation">Manifestation Pathway</option>
+</select>
+</div>
+<div class="intention-setting">
+<label for="intention">Set Your Intention</label>
+<textarea id="intention" placeholder="Focus your mind on your specific question or area of life you seek guidance on..."></textarea>
+</div>
+<button class="generate-btn" id="generateCards">
+<span class="btn-text">Generate Sacred Oracle</span>
+<div class="btn-sacred-geometry"></div>
+</button>
+</div>
+</section>
+<!-- Card Display Area -->
+<section class="card-display" id="cardDisplay" style="display: none;">
+<h2>Your Sacred Oracle Reading</h2>
+<div class="cards-container" id="cardsContainer">
+<!-- Cards will be dynamically generated here -->
+</div>
+<div class="interpretation-panel">
+<h3>Integrated Interpretation</h3>
+<div class="interpretation-text" id="interpretation">
+<!-- Interpretation will be generated here -->
+</div>
+</div>
+<div class="action-guidance">
+<h3>Practical Guidance</h3>
+<div class="action-steps" id="actionSteps">
+<!-- Action steps will be generated here -->
+</div>
+</div>
+</section>
+</main>
+<script src="knowledge-base.js"></script>
+<script src="sacred-geometry.js"></script>
+<script src="oracle-engine.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
